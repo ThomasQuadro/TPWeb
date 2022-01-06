@@ -1,0 +1,68 @@
+.accueil-lien {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.accueil-lien-perso {
+  border: #eb0000 3px solid;
+  width: 80%;
+  height: 240px;
+  background-color: #151515;
+}
+.accueil-lien-perso h2 {
+  color: #eb0000;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+.accueil-lien-perso-img {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+}
+.accueil-lien-perso-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+}
+.accueil-lien-perso-img p {
+  color: #eb0000;
+  text-align: center;
+}
+.accueil-lien-perso-img-fiche1,
+.accueil-lien-perso-img-fiche2,
+.accueil-lien-perso-img-fiche3 {
+  text-align: center;
+}
+.accueil-lien-forum,
+.accueil-lien-reseau {
+  border: #eb0000 3px solid;
+  width: 80%;
+  height: 240px;
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eb0000;
+}
+.accueil-lien-reseau {
+  margin-left: 2%;
+}
+
+.accueil-lien-down {
+  margin-top: 10px;
+  display: flex;
+  width: 80.5%;
+  justify-content: space-evenly;
+}
+p {
+  color: #eb0000;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-image: url(../../photos/thesevendeadlysins.jpg);
+  background-size: cover;
+}
