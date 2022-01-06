@@ -1,0 +1,33 @@
+body
+{
+    background-color: black;
+    color : red; 
+    display: flex;
+    justify-content: center;
+}
+.rectangle{
+    width:80%;
+    height:730px;
+    background:black;
+    align-items : center;
+    border: red 3px solid ;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.Titre{
+    border-color: red;
+}
+.help{
+    display: flex;
+    justify-content :top ;
+}
+.prénom{
+    display: flex;
+    justify-content: center;
+}
+.description {
+    display: flex;
+    justify-content: right;
+}
