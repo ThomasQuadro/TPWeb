@@ -6,32 +6,33 @@
     <link rel ="stylesheet" href ="formulaire aide.css">
 </head>
 <body>
-    <div class="rectangle">
+    <div class="accueil-formulaire-rectangle">
         <img src="C:\Users\Romain\Desktop\Hangman projet weebs\TPWeb\Accueil\Formulaire Aide\blondinet.png" alt="Blondinet">
-        <div class = Titre>
-            <h1 class = help>Besoins d'aide ?</h1>
+        <div class = accueil-formulaire-titre>
+        <div class = accueil-formulaire-titredescriptif>
+            <h1 class = accueil-formulaire-help>Besoins d'aide ?</h1>
             <p class = descriptif>Les Seven Deadly Sins sont là pour te venir en aide ! <br>
                 N'hésite pas à nous contacter en cas de besoin jeune chevalier !</p>
+            </div>
+             
+                <form action="" method="get" class="accueil-formulaire-insertion">
+                    <div class="accueil-formulaire-prenom">
+                       <div class = accueil-formulaire-column1>
+                     <label for="name">Prénom: </label> 
+                     <input type="text" name="name" id="name" required>
+                     <label for="email">E-mail: </label> 
+                     <input type="email" name="email" id="email" required>
+                   </div>
+                   <div class = accueil-formulaire-column2>
+                   <div class="accueil-formulaire-description">
+                       <label for="name">Description: </label>
+                       <input type="name" name="name" id="accueil-formulaire-description" required>
+                     </div>
+                     <input class ="envoyer" type="submit" value="Envoyer !">
+                   </div>
+                 </form>    
 
         </div>
-    <form action="" method="get" class="form-example">
-     <div class="prénom">
-      <label for="name">Prénom: </label>
-      <br>
-      <input type="text" name="name" id="name" required>
-    </div>
-    <div class="email">
-      <label for="email">Enter your email: </label>
-      <br>
-      <input type="email" name="email" id="email" required>
-    </div>
-    <div class="description">
-        <label for="name">Description: </label>
-        <input type="text" name="name" id="name" required>
-      </div>
-    <div class="form-example">
-      <input type="submit" value="Subscribe!">
-    </div>
-  </form> 
+     
 </div>   
 </body>
