@@ -1,7 +1,7 @@
 body
 {
     background-color: black;
-    color : #EB0000; 
+    color : black; 
     display: flex;
     justify-content: center;
 }
@@ -20,6 +20,7 @@ td, th
 th{
     color: #AFE7EF;
     height: 50px;
+    background-color:#151515 ;
 }
 img.aliment {
     height: 80px;
@@ -28,5 +29,32 @@ img.aliment {
 }
 td.Tierlist-Besttier
 {
-    background-color: #EB0000;
+    background-color: orange;
+    height: 100px;
+}
+th.Tierlist-Bestperso {
+
+    background-color: red;
+    color: black;
+    
+}
+td.Tierlist-Goodtier {
+
+    background-color: yellow;
+    height: 200px;
+}
+td.Tierlist-TierA {
+
+    background-color: green;
+    height: 200px;
+}
+td.Tierlist-TierB {
+
+    background-color: skyblue;
+    height: 200px;
+}
+td.Tierlist-TierC {
+
+    background-color: purple;
+    height: 200px;
 }
