@@ -5,7 +5,7 @@ Theme : Seven deadly sin grand cross (jeu mobile)
 Nom : The Guid of Sins
 
 ------------------------------------------------------
-Rappels utiles :
+    Rappels utiles :
     Couleurs :
         -Couleur rouge = #EB0000 
         -Couleur background = black
