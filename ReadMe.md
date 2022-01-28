@@ -4,10 +4,11 @@ Theme : Seven deadly sin grand cross (jeu mobile)
 
 Nom : The Guid of Sins
 
-------------------------------------------------------
+---
+
     Rappels utiles :
     Couleurs :
-        -Couleur rouge = #EB0000 
+        -Couleur rouge = #EB0000
         -Couleur background = black
         -Couleur grise/noir = #232323
         -Couleur Bleu : #AFE7EF
@@ -21,6 +22,6 @@ Nom : The Guid of Sins
 
     Photos :
         -Toutes les photos sont à jour dans le Github dans la branche main !
-    
+
     Maquette :
         -La maquette est décisive et terminé, respectez là, elle se trouve dans le Github branche  main !

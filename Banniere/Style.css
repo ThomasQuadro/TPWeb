@@ -66,3 +66,9 @@ body {
   background-image: url(../photos/thesevendeadlysins.jpg);
   background-size: cover;
 }
+
+@media screen and (max-width: 860px) {
+  .accueil-lien {
+    flex-direction: column;
+  }
+}
