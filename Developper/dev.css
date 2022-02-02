@@ -49,3 +49,10 @@ img.accueil-dev-createur-crea3-img {
   align-items: center;
   text-align: center;
 }
+
+@media screen and (max-width: 760px) {
+  .accueil-dev-createur {
+    display: flex;
+    flex-direction: column;
+  }
+}
