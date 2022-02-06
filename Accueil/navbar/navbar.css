@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+   
+}
+
+nav.accueil-menu{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    border-top: #e00000 solid 3px;
+    border-bottom: #e00000 solid 3px;
+}
+
+ul.accueil-menu-categories{
+    display: flex;
+    justify-content: end;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+ul.accueil-menu-categories li {
+    list-style: none;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h4{
+    color: #e00000;
+}
+
+/*----------------------------------------------------------*/
+
+ul.accueil-menu-categories-guides-sousmenu{
+    display: block;
+    position: absolute;
+    padding-inline-start: 0;
+    margin: 0;
+    background-color: black;
+    border: #e00000 solid 3px;
+    border-top: none;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+ul.accueil-menu-categories-guides-sousmenu li{
+    padding: 0;
+    border-bottom: #e00000 1px solid;
+    padding: 10px;
+
+}
+
+h5{
+    color: #e00000;
+    margin: 0;
+}
+
+/*--------------------------------------*/
+ul.accueil-menu-categories li.accueil-menu-categories-guides:hover ul{
+    display: block;
+}
+
+
+ul.accueil-menu-categories li a:hover h4{
+    color: aqua;
+}
+
+ul.accueil-menu-categories-guides-sousmenu li:hover h5{
+    color: aqua;
+}

@@ -1,0 +1,17 @@
+.video{
+    background-color: black;
+    width :25px;
+    height: 25px;
+}
+
+.audio{
+    background-color: blue;
+    width :25px;
+    height: 25px;
+}
+
+.texte{
+    background-color: yellow;
+    width :25px;
+    height: 25px;
+}

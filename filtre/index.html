@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- les éléments a affiché -->
+<div id="elements">
+	<div class="video"></div>
+	<div class="video"></div>
+	<div class="video"></div>
+ 
+	<div class="audio"></div>
+ 
+	<div class="texte audio"></div>
+	<div class="texte"></div>
+	<div class="texte"></div>
+	<div class="texte"></div>
+</div>
+ 
+<!-- les filtres -->
+<div id="filtres">
+	<ul>
+		<li class="filter active"><input data-filter="all" type="checkbox" id="scales" name="scales"checked><label for="scales">tout</label></li>
+		<li class="filter" data-filter="video"><input data-filter="video" type="checkbox" id="scales" name="scales"><label for="scales">Videos</label></li>
+		<li class="filter" data-filter="audio"><input data-filter="audio" type="checkbox" id="scales" name="scales"><label for="scales">audio</label></li>
+		<li class="filter" data-filter="texte"><input data-filter="texte" type="checkbox" id="scales" name="scales"><label for="scales">texte</label></li>
+	</ul>
+</div>
+<script>
+    $('#filtres li').click(function(){
+	// on recupère la valeur du filtre
+	value = $(this).data('filter');
+	// on enlève la classe active de l'ancien élément
+	$('#filtres li').removeClass('active'),
+	// on ajoute la classe active sur l'élément cliqué
+	$(this).addClass('active');
+ 
+	// pour chaque div 
+	$('#elements div').each(function(){
+		el = $(this);
+		// on montre tout
+		el.show();
+		// on teste si l'élément n'a pas la classe du filtre ou que l'utilisateur ne souhaite pas tout affiché
+		if(!el.hasClass(value) && value != "all" )
+			el.hide(); // on cache les éléments qu'on ne souhaite pas voir
+ 
+	});
+});
+</script>
+</body>
+</html>
