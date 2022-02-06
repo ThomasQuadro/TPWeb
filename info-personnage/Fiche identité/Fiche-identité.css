@@ -1,0 +1,55 @@
+i {
+  font-size: 30px;
+  color: #eb0000;
+  margin-right: 10px;
+}
+section.Fiche-identité {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(255, 0, 0);
+  text-align: center;
+  background-color: black;
+  width: 30%;
+}
+h1 {
+  color: #eb0000;
+}
+span {
+  margin-top: 10px;
+  color: #afe7fe;
+}
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border: 1px solid rgb(255, 0, 0);
+  text-align: center;
+  background-color: black;
+  color: #afe7fe;
+  padding: 0 15px;
+}
+table {
+  width: 100%;
+}
+.info {
+  display: flex;
+  width: 100%;
+}
+.img {
+  border: 1px solid rgb(255, 0, 0);
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+img {
+  border-radius: 5px;
+}
+.Titre {
+  border: 1px solid rgb(255, 0, 0);
+  width: 100%;
+}
