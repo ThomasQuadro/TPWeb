@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-----------------------------navbar------------------------------------->
+    <header class="header">
+        <nav>
+            <div class="header-logo">
+                <img src="../../photos/logo/Gear-Divine_Axe_Litta_Render.png" alt="logo">
+            </div>
+            <div class="burger">
+                <span></span>
+            </div>
+            <div class="header-navbar">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Info Perso</a></li>
+                    <li><a href="#">Modes de jeux</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Galerie</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script src="main.js"></script>
+    <!--------------------vide--------------------->
+    <section class="vide"></section>
+    <!-------------------------banniere----------------------------->
+    <section class="guide-banniere"></section>
+    <!-------------------------------------contenu--------------------------------------->
+    <section class="personnages">
+        <div class="filtre">
+            <h1>Filtres</h1>
+            <div class="gr">
+                <h3>Grade</h3>
+                <div class="grade">
+                    <div class="grade-div">
+                        <label class="checkbox">
+                            <input class="checkbox_input" type="checkbox" rel="ssr" onchange="change();"/>
+                            <svg class="checkbox_check" width="25" height="25">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </label>
+                        <span>SSR</span>
+                    </div>
+                    <div class="grade-div">
+                        <label class="checkbox">
+                            <input class="checkbox_input" type="checkbox" rel="sr" onchange="change();"/>
+                            <svg class="checkbox_check" width="25" height="25">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </label>
+                        <span>SR</span>
+                    </div>
+                    <div class="grade-div">
+                        <label class="checkbox">
+                            <input class="checkbox_input" type="checkbox" rel="r" onchange="change();"/>
+                            <svg class="checkbox_check" width="25" height="25">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </label>
+                        <span>R</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="at">
+                <h3>Attribut</h3>
+                <div class="attribut">
+                    <div class="attribut-div">
+                        <label class="checkbox">
+                            <input class="checkbox_input" type="checkbox" rel="rouge" onchange="change();"/>
+                            <svg class="checkbox_check" width="25" height="25">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </label>
+                        <span>Rouge</span>
+                    </div>
+                    <div class="grade-div">
+                        <label class="checkbox">
+                            <input class="checkbox_input" type="checkbox" rel="vert" onchange="change();"/>
+                            <svg class="checkbox_check" width="25" height="25">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </label>
+                        <span>Vert</span>
+                    </div>
+                    <div class="grade-div">
+                        <label class="checkbox">
+                            <input class="checkbox_input" type="checkbox" rel="bleu" onchange="change();"/>
+                            <svg class="checkbox_check" width="25" height="25">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </label>
+                        <span>Bleu</span>
+                    </div>
+                    <div class="grade-div">
+                        <label class="checkbox">
+                            <input class="checkbox_input" type="checkbox" rel="tenebre" onchange="change();"/>
+                            <svg class="checkbox_check" width="25" height="25">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </label>
+                        <span>Ténèbre</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="perso">
+            <a href="#" class="ssr tenebre"><img src="../photos/tierlist/ss/meliodas3000.png" alt="meliodas3000" class="ssr tenebre"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/ss/146.png" alt="kyo" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/ss/165.png" alt="merlin loly" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/ss/41.png" alt="gowther rouge" class="ssr rouge"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/ss/ban.png" alt="ban" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/ss/escanor.png" alt="escanor" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/ss/gowtherv.png" alt="gowther vert" class="ssr vert"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/ss/king.png" alt="king" class="ssr bleu"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/ss/margaret.png" alt="margaret" class="ssr bleu"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/s/106.png" alt="derrierie rouge" class="ssr rouge"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/s/112.png" alt="meliodas lostvayne" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/s/124.png" alt="elizabeth god" class="ssr bleu"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/s/151.png" alt="tarmiel" class="ssr bleu"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/s/152.png" alt=" sariel" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/s/158.png" alt="meliodas assault" class="ssr vert"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/s/163.png" alt=" derrierie st valentin" class="ssr bleu"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/s/170.png" alt="chandler" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/s/171.png" alt="zeldris fest" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/s/176.png" alt="arthur excalibur" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/s/184.png" alt="merlin plage" class="ssr bleu"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/s/186.png" alt="cusak" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/s/192.png" alt="gowther fest" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/s/193.png" alt="matrona haloween" class="ssr rouge"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/s/197.png" alt="terry" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/s/lillia.png" alt="lilia bleu eveille" class="ssr bleu"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/3.png" alt="arthur rouge ssr" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/8.png" alt="ban vert ssr" class="ssr vert"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/10.png" alt="ban bleu ssr" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/16.png" alt="diane geante verte" class="ssr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/19.png" alt="diane verte" class="ssr vert"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/25.png" alt="elaine bleu" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/33.png" alt="escanor vert" class="ssr vert"></a>
+            <a href="#" class="sr vert"><img src="../photos/tierlist/a/37.png" alt="gilthunder vert sr" class="sr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/51.png" alt="helbram vert" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/52.png" alt="helbram rouge" class="ssr rouge"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/55.png" alt="howser r" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/64.png" alt="king bleu" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/65.png" alt="king v" class="ssr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/69.png" alt="lilia verte" class="ssr verte"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/70.png" alt="lilia bleu" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/73.png" alt="meliodas v" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/76.png" alt="meliodas r" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/77.png" alt="meliodas bleu" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/78.png" alt="merlin verte" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/79.png" alt="merlin r" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/91.png" alt="valenty v" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/94.png" alt="escanor r" class="ssr rouge"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/98.png" alt="king r" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/99.png" alt="belion" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/101.png" alt="estarossa v" class="ssr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/105.png" alt="derrierie v" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/107.png" alt="melascule r" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/109.png" alt="eastin b" class="ssr bleu"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/111.png" alt="arthur b" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/114.png" alt="monspiet v" class="ssr vert"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/119.png" alt="zeldris b" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/121.png" alt="shin v" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/125.png" alt="zeldris r" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/126.png" alt="dolor v" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/130.png" alt="levi" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/131.png" alt="eren" class="ssr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/133.png" alt="eastin v" class="ssr vert"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/134.png" alt="dolor b" class="ssr bleu"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/136.png" alt="ludo b" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/140.png" alt="hendrickson v" class="ssr vert"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/141.png" alt="king fest b" class="ssr bleu"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/142.png" alt="mono b" class="ssr bleu"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/143.png" alt="lillia eveil r" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/144.png" alt="may b" class="ssr bleu"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/145.png" alt="kof vert" class="ssr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/147.png" alt="rugal v" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/148.png" alt="shin r" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/149.png" alt="roxy v" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/153.png" alt="jericho r" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/154.png" alt="arthur v" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/156.png" alt="elaine r" class="ssr rouge"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/159.png" alt="hawkslow r" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/160.png" alt="nanashi" class="ssr bleu"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/161.png" alt="eastin r" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/162.png" alt="valenty v" class="ssr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/167.png" alt="ram" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/168.png" alt="rem" class="ssr rouge"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/169.png" alt="emylia" class="ssr bleu"></a>
+            <a href="#" class="ssr bleu"><img src="../photos/tierlist/a/180.png" alt="melio lost b" class="ssr bleu"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/181.png" alt="sigurd r" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/187.png" alt="diane v" class="ssr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/188.png" alt="Brunhilder" class="ssr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/189.png" alt="mono v" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/190.png" alt="eastin r" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/194.png" alt="diane haloween" class="ssr vert"></a>
+            <a href="#" class="ssr rouge"><img src="../photos/tierlist/a/195.png" alt="slader haloween" class="ssr rouge"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/196.png" alt="kof v" class="ssr vert"></a>
+            <a href="#" class="ssr vert"><img src="../photos/tierlist/a/204.png" alt="sariel v" class="ssr vert"></a>
+        </div>
+    </section>
+    <!------------------------------------footer------------------------------------------->
+    <footer>
+        <div class="footer-up">
+            <!-- --------------------- -->
+            <div class="footer-up-logotext">
+                <!-- ------------------------------- -->
+                <img src="/photos/logo/Icon_stamp_escanor_01.png" alt="logo">
+                <div class="footer-up-logotext-text">
+                    <h5>7GSFR.fr</h5>
+                    <span>Le guide complet de 7DSGC</span>
+                </div>
+            </div>
+            <!-- ------------------------------- -->
+            <div class="footer-up-social-media">
+            <!-- ------------------------------- -->
+                <ul>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-up-beta">
+                <img src="/photos/footer/beta.png" alt="beta">
+            <!-- ------------------------------- -->
+            </div>
+            <!-- ----------------------->
+        </div>
+        <!-- ---------------------------------------------------- -->
+        <div class="footer-down">
+            <div class="footer-down-copy-right">
+                <a href="#">7GSFR.FR</a> 2020   |   ALL RIGHTS RESERVED
+                <p>VOUS ÊTES LIBRE D'UTILISER LES INFORMATIONS/IMAGES DU SITE, DE LES MODIFIER MAIS S'IL VOUS PLAIT, NOUS VOUS DEMANDONS DE NOUS CITER.</p>
+            </div>
+            <div class="footer-down-info">
+                <ul>
+                    <li><a href="#">Accueil</a><a href="#">Info Perso</a><a href="#">Modes de jeu</a><a href="#">Guides</a><a href="#">Galerie</a></li>
+                    <li>CRÉDITS SDSGC.FR</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------------------------------------------------->
+</body>
+</html>

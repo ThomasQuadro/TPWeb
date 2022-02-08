@@ -1,56 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
 </head>
+
 <body>
-<!-- les éléments a affiché -->
-<div id="elements">
-	<div class="video"></div>
-	<div class="video"></div>
-	<div class="video"></div>
- 
-	<div class="audio"></div>
- 
-	<div class="texte audio"></div>
-	<div class="texte"></div>
-	<div class="texte"></div>
-	<div class="texte"></div>
-</div>
- 
-<!-- les filtres -->
-<div id="filtres">
-	<ul>
-		<li class="filter active"><input data-filter="all" type="checkbox" id="scales" name="scales"checked><label for="scales">tout</label></li>
-		<li class="filter" data-filter="video"><input data-filter="video" type="checkbox" id="scales" name="scales"><label for="scales">Videos</label></li>
-		<li class="filter" data-filter="audio"><input data-filter="audio" type="checkbox" id="scales" name="scales"><label for="scales">audio</label></li>
-		<li class="filter" data-filter="texte"><input data-filter="texte" type="checkbox" id="scales" name="scales"><label for="scales">texte</label></li>
-	</ul>
-</div>
-<script>
-    $('#filtres li').click(function(){
-	// on recupère la valeur du filtre
-	value = $(this).data('filter');
-	// on enlève la classe active de l'ancien élément
-	$('#filtres li').removeClass('active'),
-	// on ajoute la classe active sur l'élément cliqué
-	$(this).addClass('active');
- 
-	// pour chaque div 
-	$('#elements div').each(function(){
-		el = $(this);
-		// on montre tout
-		el.show();
-		// on teste si l'élément n'a pas la classe du filtre ou que l'utilisateur ne souhaite pas tout affiché
-		if(!el.hasClass(value) && value != "all" )
-			el.hide(); // on cache les éléments qu'on ne souhaite pas voir
- 
-	});
-});
-</script>
+  <div class="filter">
+    <h1>Select models</h1>
+    <div class="models">
+      <div class="checkbox">
+        <label><input type="checkbox" rel="apple" onchange="change();"/>Apple</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" rel="samsung" onchange="change();"/>Samsung</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" rel="xiaomi" onchange="change();"/>Xiaomi</label>
+      </div>
+    </div>
+    <h1>Select processors</h1>
+    <div class="processors">
+      <div class="checkbox">
+        <label><input type="checkbox" rel="a9" onchange="change();"/>A9</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" rel="a8" onchange="change();"/>A8</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" rel="snapdragon" onchange="change();"/>Snapdragon</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" rel="exynos" onchange="change();"/>Exynos</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="result">
+    <div class="apple a9 a8">
+      <h1>iPhone 7</h1>
+    </div>
+    <div class="apple a8">
+      <h1>iPhone 6</h1>
+    </div>
+    <div class="samsung exynos">
+      <h1>Samsung s7</h1>
+    </div>
+    <div class="xiaomi snapdragon">
+      <h1>Xiaomi Redmi note 4x</h1>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>

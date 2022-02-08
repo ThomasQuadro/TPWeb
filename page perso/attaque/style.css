@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.info-attaque-up-titre i{
+    color: #eb0000;
+    margin-right: 10px;
+}
+
+.info-attaque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: #eb0000 solid 3px;
+    width: 40%;
+    margin: 20px;
+    color: #AFE7EF;
+}
+
+.info-attaque-up{
+    width: 100%;
+}
+
+.info-attaque-up-titre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom:#eb0000 solid 3px ;
+}
+
+.info-attaque-up-titre h1{
+    color:#AFE7EF ;
+}
+
+.info-attaque-up-img{
+    width: 100%;
+}
+
+.info-attaque-up-img img{
+    width: 50%;
+}
+
+.info-attaque-up-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top:#eb0000 solid 3px ;
+    border-bottom: #eb0000 solid 3px;
+    height: 50px;
+    padding: 15px 0;
+}
+
+.info-attaque-up-description span{
+    margin: 15px;
+    font-size: 15px;
+}
+
+.info-attaque-up-table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 100%;
+    border-collapse:collapse ;
+    margin-bottom: 15px;
+}
+
+.info-attaque-up-table tr{
+    height: 50px;
+    width: 100%;
+    
+}
+
+td{
+    border:#eb0000 solid 3px;
+}
+
+td.gauche{
+    width: 20%;
+    border-left: none;
+}
+td.droite{
+    border-right: none;
+}
+
+.haut{
+    border-top: none;
+    border-bottom: none;
+}
+
+.bas{
+    border-top: none;
+}

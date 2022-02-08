@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.passif{
+    width: 30%;
+    border: #ea0000 solid 3px;
+}
+
+.passif h2{
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+    border-bottom: #ea0000 solid 3px;
+}
+
+.passif i{
+    color: #ea0000;
+    margin-right: 10px;
+}
+
+.passif-img{
+    width: 100%;
+    border-bottom: #ea0000 solid 3px;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.passif-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.passif-description{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.passif-description{
+    font-size: 16px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px){
+    .passif{
+        width: 60%;
+    }
+    .passif h2{
+        font-size: 20px;
+    }
+    .passif span{
+        font-size: 50%;
+        text-align: center;
+    }
+    .passif-img img{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+}

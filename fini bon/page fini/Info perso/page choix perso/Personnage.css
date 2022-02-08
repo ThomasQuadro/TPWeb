@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+section.info-personnage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+}
+div.banniere-personnage {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.img-banniere {
+  display: flex;
+  border: red solid 2px;
+  color: red;
+  border-left: hidden;
+  border-right: hidden;
+  width: 100%;
+  height: 100%;
+}
+.bouton-tierlist,
+.bouton-personnages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  border: red solid 1px;
+  color: red;
+}
+.bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
