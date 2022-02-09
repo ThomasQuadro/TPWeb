@@ -1,0 +1,151 @@
+/*---------------------------------------------banniere-------------------------------------------------*/
+
+section.guide-banniere {
+  background: url("../../../Photos/categorie/banniere/modeDeJeu/ragnarok.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 160px;
+  position: relative;
+  z-index: 19;
+  border-bottom: #eb0000 solid 3px;
+}
+
+/*--------------------------contenu------------------------*/
+
+/**/ /**/
+.team-1,
+.team-2 {
+  width: 100%;
+  color: #eb0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.team-1-title,
+.team-2-title {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  border-bottom: #eb0000 solid 3px;
+  margin: 50px 0;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+.team-1-global,
+.team-2-global {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.team-1 span,
+.team-2 span {
+  color: #afe7ef;
+}
+
+.team-2 span {
+  color: #d3a684;
+}
+
+.team-1-global-left h1,
+.team-1-global-right h1,
+.team-2-global-left h1,
+.team-2-global-right h1 {
+  color: #afe7ef;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  padding-top: 0;
+  font-size: 35px;
+}
+
+.team-2-global-left h1,
+.team-2-global-right h1 {
+  color: #d3a684;
+  width: 100%;
+}
+
+.team-1-global-left,
+.team-1-global-right,
+.team-2-global-left,
+.team-2-global-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #eb0000 solid 3px;
+  background: #151515;
+  width: 45%;
+  padding: 15px;
+}
+
+.team-1-global-left-perso,
+.team-1-global-right-perso,
+.team-2-global-left-perso,
+.team-2-global-right-perso {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.team-1-global-left-perso-1,
+.team-1-global-left-perso-2,
+.team-1-global-left-perso-3,
+.team-1-global-left-perso-4,
+.team-1-global-right-perso-1,
+.team-1-global-right-perso-2,
+.team-1-global-right-perso-3,
+.team-1-global-right-perso-4,
+.team-2-global-left-perso-1,
+.team-2-global-left-perso-2,
+.team-2-global-left-perso-3,
+.team-2-global-left-perso-4,
+.team-2-global-right-perso-1,
+.team-2-global-right-perso-2,
+.team-2-global-right-perso-3,
+.team-2-global-right-perso-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-1-global img,
+.team-2-global img {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+/*-----------------------------------------reponsive----------------------------------------*/
+@media screen and (max-width: 1250px) {
+  .team-1-global,
+  .team-2-global {
+    flex-direction: column;
+  }
+  .team-1-global-left,
+  .team-2-global-left {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .team-1-global-left-perso,
+  .team-1-global-right-perso,
+  .team-2-global-left-perso,
+  .team-2-global-right-perso {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,47 @@
+/*---------------------------------------------banniere-------------------------------------------------*/
+
+section.guide-banniere {
+  background: url("../../../photos/categorie/banniere/guides/effet.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 160px;
+  position: relative;
+  z-index: 19;
+  border-bottom: #eb0000 solid 3px;
+}
+
+/*--------------------------contenu------------------------*/
+body {
+  background-color: black;
+  color: #eb0000;
+  display: flex;
+  justify-content: center;
+}
+table {
+  border-collapse: collapse;
+  background-color: #151515;
+  width: 80%;
+  margin: 20px 0;
+}
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid rgb(255, 0, 0);
+  text-align: center;
+  height: 200px;
+  color: #afe7ef;
+}
+th {
+  height: 50px;
+}
+td img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+td.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

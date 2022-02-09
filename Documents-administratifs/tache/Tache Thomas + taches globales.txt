@@ -1,0 +1,80 @@
+Nom du site :
+seven guid of sins
+
+--------------------------------------------------------------
+
+Structure du site:
+
+Accueil
+
+Personnages :
+-Tiers list
+-Liste personnages
+
+Modes de jeu :
+- demons
+- tour des epreuves 
+- pvp
+- mode histoire / inversé
+- piaf / ragnarok
+- boss temporaire (final boss, boss event ...)
+- fort solgales et grotte entrainement
+
+Guides :
+-Aliments
+-Stuff
+-Effets
+-Dictionnaire
+
+Galerie :
+-photo du jeu
+-Ecran de chargement
+
+---------------------------------------------------------------------
+
+tache faites :
+Nolan : team du site, les actus
+Romain : Formulaire de contact, footer
+
+--------------------------------------------------------------
+REGLE DE CODE :
+-Faire des class qui montre un chemin :
+Vous faites la page d'accueil --> class="accueil-nom de la 1ere class-(si une deuxieme calss dans la class mettre le nom de la 2nd)"
+-Faire le responsive de la page (display: flex pour pouvoir bouger les eléments comme vous le 'souhaité')
+-Pour chaque module, faire une section (menu = nav/header, image personnages = section, pied de page = footer)
+-Si ça vous aide faire un schéma !
+-Pour vous aidez cherchez sur internet (blog, open classroom ...)
+-Testez votre html sur plusieurs navigateurs !
+
+-------------------------------------------------------------------
+Y = fait
+
+
+tache a faire :
+Accueil : 
+thomas : Y=navbar, caroussel
+
+Personnages :
+Nolan : Y=page choix, Tierlist(agencement)
+Thomas : Y=page personnage
+
+Mode de jeu:
+Y(par Thomas)=Romain : page choix + 2 page team 
+Y=Thomas: 4 pages team
+
+Guides
+Y=Nolan : 2 pages guides + page choix
+Y(par Nolan)=Romain : 2 pages guides
+
+Galerie:
+Y=Thomas : galerie
+
+Page personnage:
+Y= Thomas
+
+----------------------------------------
+admin :
+
+Y=Thomas: maquette
+Y=Nolan/Thomas: cahier des charges
+Y=Nolan:Pitch

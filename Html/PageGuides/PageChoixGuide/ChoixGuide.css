@@ -1,0 +1,100 @@
+/*---------------------------------------------banniere-------------------------------------------------*/
+
+section.guide-banniere {
+  background: url("../../../photos/categorie/banniere/guides/guides.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 160px;
+  position: relative;
+  z-index: 19;
+  border-bottom: #eb0000 solid 3px;
+}
+
+/*--------------------------contenu------------------------*/
+
+.guide-choix {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-choix-colonne-gauche,
+.guide-choix-colonne-droite {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.guide-choix-colonne-gauche {
+  align-items: flex-end;
+}
+
+.guide-choix-colonne-droite {
+  align-items: flex-start;
+}
+
+.guide-choix a {
+  width: 70%;
+  height: 160px;
+  margin: 5%;
+}
+
+.guide-choix-colonne-gauche-aliment,
+.guide-choix-colonne-gauche-effet,
+.guide-choix-colonne-droite-stuff,
+.guide-choix-colonne-droite-dictionnaire {
+  width: 100%;
+  height: 100%;
+  border: #eb0000 solid 3px;
+  cursor: pointer;
+}
+
+.guide-choix-colonne-gauche-aliment {
+  background: url("../../../photos/categorie/guide/aliments/banniere/aliment.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.guide-choix-colonne-gauche-effet {
+  background: url("../../../photos/categorie/guide/effets/banniere/effet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.guide-choix-colonne-droite-stuff {
+  background: url("../../../photos/categorie/guide/stuff/banniere/stuff.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.guide-choix-colonne-droite-dictionnaire {
+  background: url("../../../photos/categorie/guide/dictionnaire/banniere/dictionnaire.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/*-------------------responsive---------------------*/
+
+@media screen and (max-width: 780px) {
+  .guide-choix {
+    flex-direction: column;
+  }
+  .guide-choix-colonne-gauche,
+  .guide-choix-colonne-droite {
+    align-items: center;
+  }
+}
