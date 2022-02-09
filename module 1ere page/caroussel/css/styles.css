@@ -1,0 +1,53 @@
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+    border: #eb0000 solid 3px;
+}
+
+.elements{
+    display: flex;
+    
+
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > a{
+    width: 100%;
+    color: #eb0000;
+}
+
+a > img{
+    width: 100%;
+}
+
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #151515;
+    padding: 10px;
+    border: #eb0000 solid 3px;
+}
+
+#nav-gauche, #nav-droite{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #eb0000;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#nav-droite{
+    right: 0;
+}

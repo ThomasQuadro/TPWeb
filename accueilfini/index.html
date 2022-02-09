@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+</head>
+<body>
+    <!-----------------------------navbar------------------------------------->
+    <header class="header">
+        <nav>
+            <div class="header-logo">
+                <img src="../../photos/logo/Gear-Divine_Axe_Litta_Render.png" alt="logo">
+            </div>
+            <div class="burger">
+                <span></span>
+            </div>
+            <div class="header-navbar">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Info Perso</a></li>
+                    <li><a href="#">Modes de jeux</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Galerie</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script src="main.js"></script>
+    <!--------------------vide--------------------->
+    <section class="vide"></section>
+    <!-------------------------banniere----------------------------->
+    <section class="guide-banniere"></section>
+    <!-------------------------------------contenu--------------------------------------->
+    <section class="caroussel">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <a href="https://forum.netmarble.com/7ds_en"><img src="../photos/caroussel/7ds-grand-cross-100-celebration-890x500 (1).jpg" style="width:100%"></a>
+            </div>
+        
+            <div class="mySlides fade">
+            <a href="https://forum.netmarble.com/7ds_en/view/27/242291"><img src="../photos/caroussel/maj.jpg" style="width:100%"></a>
+            </div>
+        
+            <div class="mySlides fade">
+            <a href="https://7dsgc.netmarble.com/fr/pcclient"><img src="../photos/caroussel/pc.jpg" style="width:100%"></a>
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" go", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " go";
+            }
+        </script>
+    </section>
+
+    <section class="base">
+        <div class="base-perso">
+            <h2>Personnages récemment ajoutés</h2>
+            <div class="base-perso-ajout">
+                <a href="#"><img src="../photos/tierlist/a/ssrb_portrait.png" alt=""></a>
+                <a href="#"><img src="../photos/tierlist/a/ssrr_portrait.png" alt=""></a>
+            </div>
+        </div>
+        <div class="base-bas">
+            <div class="base-bas-gauche">
+                <a href="https://www.youtube.com/c/TheSevenDeadlySinsGrandCross"><img src="../photos/accueil/reseaufini.jpg" alt=""></a>
+            </div>
+            <div class="base-bas-droite">
+                <a href="https://forum.netmarble.com/7ds_en"><img src="../photos/accueil/forumfini.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="accueil-dev">
+        <div class="accueil-dev-titre">
+            <h2>Notre Equipe</h2>
+        </div>
+        <div class="accueil-dev-createur">
+            <div class="accueil-dev-createur-crea1">
+                <img src="../photos/createur/51FBJSNc-mL._AC_SX679._SX._UX._SY._UY_.jpg" alt="" class="accueil-dev-createur-crea1-img">
+                <div class="texte">
+                    <h3>Thomas</h3>
+                    <p>Développeur Web<br>Fan de Seven Deadly Sins<br>Joueur de 7ds : GC</p>
+                </div>
+            </div>
+            <div class="accueil-dev-createur-crea2">
+                <img src="../photos/createur/wp4711244-dragons-sin-wallpapers (1).jpg" alt="" class="accueil-dev-createur-crea2-img">
+                <div class="texte">
+                    <h3>Nolan</h3>
+                    <p>Développeur Web<br>Fan de Seven Deadly Sins<br>Expert en jeu de stratégie</p>
+                </div>
+            </div>
+            <!-- <div class="accueil-dev-createur-crea3">
+                <img src="/TPWeb/photos/paresse.jpg" alt="" class="accueil-dev-createur-crea3-img">
+                <div class="texte">
+                    <h3>Romain</h3>
+                    <p>Développeur Web<br>Fan de Seven Deadly Sins<br>Web Designer</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <form method="post" class="formulaire">
+        <h2>Besoins d'aide ?</h2>
+        <p>Les Seven Deadly Sins sont là pour te venir en aide !
+            N'hésite pas à nous contacter en cas de besoin jeune chevalier !
+        </p>
+        <div class="formulaire-zone">
+            <div class="formulaire-zone-gauche">
+                <div class="formulaire-zone-gauche-haut">
+                    <label for="name">Prénom :</label>
+                    <input type="text" placeholder="Entrez votre prénom">
+                </div>
+                <div class="formulaire-zone-gauche-bas">
+                    <label for="mail">E-mail :</label>
+                    <input type="email" placeholder="Entrez votre email">
+                </div>
+            </div>
+            <div class="formulaire-zone-droite">
+                <label for="text">Description :</label>
+                <textarea name="text" id="area" cols="30" rows="10" placeholder="Entrer votre message"></textarea>
+            </div>
+        </div>
+        <button>Envoyer</button>
+    </form>
+    <!------------------------------------footer------------------------------------------->
+    <footer>
+        <div class="footer-up">
+            <!-- --------------------- -->
+            <div class="footer-up-logotext">
+                <!-- ------------------------------- -->
+                <img src="/photos/logo/Icon_stamp_escanor_01.png" alt="logo">
+                <div class="footer-up-logotext-text">
+                    <h5>7GSFR.fr</h5>
+                    <span>Le guide complet de 7DSGC</span>
+                </div>
+            </div>
+            <!-- ------------------------------- -->
+            <div class="footer-up-social-media">
+            <!-- ------------------------------- -->
+                <ul>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-up-beta">
+                <img src="/photos/footer/beta.png" alt="beta">
+            <!-- ------------------------------- -->
+            </div>
+            <!-- ----------------------->
+        </div>
+        <!-- ---------------------------------------------------- -->
+        <div class="footer-down">
+            <div class="footer-down-copy-right">
+                <a href="#">7GSFR.FR</a> 2020   |   ALL RIGHTS RESERVED
+                <p>VOUS ÊTES LIBRE D'UTILISER LES INFORMATIONS/IMAGES DU SITE, DE LES MODIFIER MAIS S'IL VOUS PLAIT, NOUS VOUS DEMANDONS DE NOUS CITER.</p>
+            </div>
+            <div class="footer-down-info">
+                <ul>
+                    <li><a href="#">Accueil</a><a href="#">Info Perso</a><a href="#">Modes de jeu</a><a href="#">Guides</a><a href="#">Galerie</a></li>
+                    <li>CRÉDITS SDSGC.FR</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------------------------------------------------->
+</body>
+</html>
